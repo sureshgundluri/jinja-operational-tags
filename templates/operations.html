@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>oprations</h1>
+    <h1>if-else-elif condition</h1>
+    {% if a > b and a > c %}
+    <h1>if block is executed</h1>
+    <h1>a is greater</h1>
+    {% elif b > c %}
+    <h1>elif block is get executed</h1>
+    <h1>b is greater</h1>
+    {% else %}
+    <h1>else block is get executed </h1>
+    <h1>c is greater</h1>
+    {% endif %} -->
+    <h1>nested if condition</h1>
+    {% if a > b %}
+         {% if a > c %}
+         <h1> if  inner if condition is get executed</h1>
+         <h1>a is greater</h1>
+         {% else %}
+         <h1> if inner else condition is get executed</h1>
+         <h1>c  is greater </h1>
+         {% endif %}
+    {% else %}
+        {% if b > c  %}
+        <h1> else  inner if condition is get executed</h1>
+         <h1>b is greater</h1>
+        {% else %}
+        <h1> else inner else condition is get executed</h1>
+         <h1>c is greater</h1>
+        {%endif%}
+    {%endif%}
+</body>
+</html>
